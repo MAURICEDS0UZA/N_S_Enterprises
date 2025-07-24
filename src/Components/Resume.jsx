@@ -1,9 +1,5 @@
-import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
-import resumePdf from "../assets/pdf/Maurice-Minin-Dsouza.pdf";
-import { RESUMEURL } from "../utils/constant";
-
 import { msAppartment,hydAirport, hirandaini,naviAirport,desai} from './../../src/utils/constant'
 import ImageSlider from "./ImageSlider";
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import useIsMobile from "./../utils/hooks/isMobile"; 
+import useIsMobile from "./../utils/hooks/isMobile";
 
 
 const Header = () => {
@@ -15,9 +15,9 @@ const Header = () => {
     <header className=" bg-orange-500 text-white p-4 w-full font-serif">
       <nav className="container mx-auto flex items-center justify-between">
         <div>
-          {!isMobile && <img src="./src/assets/images/nsLogo.png" alt="N.S.Enterprises" />} 
-          {isMobile &&<div className="text-xl font-bold">N.S. Enterprises</div>}
-          </div>
+          {!isMobile && <img src="./src/assets/images/nsLogo.png" alt="N.S.Enterprises" />}
+          {isMobile && <div className="text-xl font-bold">N.S. Enterprises</div>}
+        </div>
         <div className="hidden md:flex space-x-4">
           <Link to="/">Home</Link>
           <Link to="/skills">Services</Link>
@@ -45,21 +45,21 @@ const Header = () => {
         </div>
       </nav>
       {isOpen && (
-        <div className="md:hidden bg-gray-800">
+        <div className="md:hidden bg-white text-orange-600">
           <div className="flex flex-col space-y-2 p-4">
-            <Link to="/" onClick={toggleMenu}>
+            <Link to="/" onClick={toggleMenu} className="hover:bg-orange-100 p-2 rounded">
               Home
             </Link>
-            <Link to="/skills" onClick={toggleMenu}>
+            <Link to="/skills" onClick={toggleMenu} className="hover:bg-orange-100 p-2 rounded">
               Services
             </Link>
-            <Link to="/projects" onClick={toggleMenu}>
+            <Link to="/projects" onClick={toggleMenu} className="hover:bg-orange-100 p-2 rounded">
               Projects
             </Link>
-            <Link to="/resume" onClick={toggleMenu}>
+            <Link to="/resume" onClick={toggleMenu} className="hover:bg-orange-100 p-2 rounded">
               Gallery
             </Link>
-            <Link to="/contact" onClick={toggleMenu}>
+            <Link to="/contact" onClick={toggleMenu} className="hover:bg-orange-100 p-2 rounded">
               Contact
             </Link>
           </div>

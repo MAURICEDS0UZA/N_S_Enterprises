@@ -1,3 +1,5 @@
+import { PROJECTS } from "../utils/constant";
+
 const Projects = () => {
   return (
     <div className="overflow-x-auto">

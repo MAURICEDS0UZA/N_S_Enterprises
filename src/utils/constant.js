@@ -436,7 +436,7 @@ const PROJECTS = [
     client: "M/S SEW ENGG",
     contactPerson: "MR SANJEEV KADEPURE",
     contactNumber: "9867030729",
-    amount: "₹ 1,160,000,000.00",
+    amount: "₹ 1,60,000.00",
   },
 ];
 
